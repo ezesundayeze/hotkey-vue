@@ -1,0 +1,76 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f9fc;
+}
+
+#app {
+  width: 80%;
+  display: flex;
+}
+
+#sidebar {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  max-height: 500px; /* Adjust as needed */
+}
+
+.note {
+  border: 1px solid #aedff7;
+  background-color: #d6eaf8;
+  margin: 10px 0;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.note:hover {
+  background-color: #aedff7;
+}
+
+#note-view,
+#note-edit {
+  padding: 20px;
+  flex: 2;
+  transition: flex 0.3s;
+}
+
+.delete-note {
+  color: #e74c3c;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.delete-note:hover {
+  text-decoration: underline;
+}
+
+#title-input,
+#edit-text {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #aedff7;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
